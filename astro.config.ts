@@ -9,6 +9,8 @@ import mdx from "@astrojs/mdx";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 
+import cloudflare from "@astrojs/cloudflare";
+
 // https://astro.build/config
 export default defineConfig({
   site: SITE.website,
@@ -43,4 +45,6 @@ export default defineConfig({
     },
   },
   scopedStyleStrategy: "where",
+  output: "server",
+  adapter: cloudflare(),
 });
