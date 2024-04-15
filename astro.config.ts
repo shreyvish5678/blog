@@ -5,11 +5,6 @@ import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import sitemap from "@astrojs/sitemap";
 import { SITE } from "./src/config";
-import mdx from "@astrojs/mdx";
-import remarkMath from "remark-math";
-import rehypeKatex from "rehype-katex";
-
-import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
@@ -20,7 +15,6 @@ export default defineConfig({
     }),
     react(),
     sitemap(),
-    mdx(),
   ],
   markdown: {
     remarkPlugins: [
@@ -31,9 +25,7 @@ export default defineConfig({
           test: "Table of contents",
         },
       ],
-      remarkMath,
     ],
-    rehypePlugins: [rehypeKatex],
     shikiConfig: {
       theme: "one-dark-pro",
       wrap: true,
@@ -45,6 +37,4 @@ export default defineConfig({
     },
   },
   scopedStyleStrategy: "where",
-  output: "server",
-  adapter: cloudflare(),
 });
