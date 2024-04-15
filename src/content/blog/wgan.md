@@ -167,7 +167,7 @@ def gradient_penalty(self, batch_size, real_images, fake_images):
         return gp
 ```
 
-Firstly, let's establish a mean function $m(x)=\frac{\sum{x}}{N}$ that just calculates the average of a given tensor across all axes. We also calculate our fake images with $G(z_{i}) = x_{i}$, where G is the forward pass of the generator. The first line generates a tensor sampled from the normal distribution and can be represented with $\alpha \sim \mathcal{N}(0,1)$, since we are taking it from the normal distribution. After that, we calculate the interpolated images, which is what the discriminator will predict off of. The equation for it is:
+Firstly, let's establish a mean function $$m(x)=\frac{\sum{x}}{N}$$ that just calculates the average of a given tensor across all axes. We also calculate our fake images with $G(z_{i}) = x_{i}$, where G is the forward pass of the generator. The first line generates a tensor sampled from the normal distribution and can be represented with $\alpha \sim \mathcal{N}(0,1)$, since we are taking it from the normal distribution. After that, we calculate the interpolated images, which is what the discriminator will predict off of. The equation for it is:
 
 $I_{i} = x_{i} + \alpha_{i}(\hat{x}_{i}-x_{i})$
 
