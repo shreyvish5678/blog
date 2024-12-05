@@ -13,6 +13,22 @@ description: "Understanding Euler's Identity with Taylor Polynomials: An introdu
 
 ## Introduction
 
+Euler's identity,
+
+$$
+e^{i\pi} + 1 = 0,
+$$
+
+is often celebrated as one of the most elegant equations in mathematics. It connects five fundamental constants: $e$ (the base of natural logarithms), $i$ (the imaginary unit), $\pi$ (a cornerstone of geometry), and the numbers $1$ and $0$. Discovered by Leonhard Euler in the 18th century, this identity bridges algebra, geometry, and calculus in a profound way.
+
+In this paper, we will:
+
+1. Explore the mathematical foundations behind Euler’s identity, such as Taylor series and complex numbers.
+2. Derive key expansions for $e^x$, $\sin(x)$, and $\cos(x)$.
+3. Prove Euler’s formula and its special case $e^{i\pi} = -1$.
+
+This journey reveals the surprising beauty of mathematics hidden within its symbols.
+
 ### Taylor Polynomials
 
 #### Intuition behind Taylor Polynomials
@@ -286,7 +302,9 @@ $$
 This means we have proven Euler's Identity:
 
 $$
-e^{i \pi} = -1.
+e^{i \pi} + 1 = 0.
 $$
 
 ### Conclusion
+
+Euler's identity beautifully connects five fundamental mathematical constants: $ e, i, \pi, 1, $ and $ 0 $, in a single equation. This result is a culmination of concepts from calculus, Taylor series, and complex numbers, showcasing the inherent harmony of mathematics.
