@@ -220,7 +220,7 @@ Essentially, the $ n $-th derivative of $ \cos(x) $ at $ x=0 $ is $ (-1)^{n} $ f
 Thus, the Taylor polynomial becomes:
 
 $$
-\sin(x) = T(x) = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \dots = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n}}{(2n)!}
+\cos(x) = T(x) = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \dots = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n}}{(2n)!}
 $$
 
 ### Bringing it all together
