@@ -123,6 +123,10 @@
   pre > code {
     white-space: pre;
   }
+
+  [data-theme="dark"] .katex * {
+    color: #e5e7eb;
+  }
 }
 
 @layer components {
