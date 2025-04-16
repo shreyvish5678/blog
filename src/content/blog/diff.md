@@ -1,6 +1,6 @@
 ---
 author: Shrey Vishen
-pubDatetime: 2025-04-14T12:30:04.000+00:00
+pubDatetime: 2025-04-15T00:58:04.000+00:00
 title: An Introduction to Diffusion Models Part 1
 slug: "diffusion-models"
 featured: true
@@ -13,7 +13,7 @@ description: "An Introduction to Diffusion Models Part 1: The Mathematics Behind
 
 ## Introduction
 
-Diffusion Models are the cornerstone of Image Generation in modern Generative AI. From being used in applications like Video generation in Runway, to high quality open-source generation such as Stable Diffusion and FLUX. With the advent of GPT 4o's new autoregressive image gen, it's time to look at diffusion models and why they aren't going away anytime soon. This is a very surface level introduction to diffusion models, from data setup to training and testing. We will be training the model on the CelebA dataset, an image dataset with over 200k+ images. For part 1, we will just be covering the theory, so if you aren't a math person (you can still explore this), or want to jump straight to the code, you can skip to part 2 (when it is out). The code will be available on my GitHub as well.
+Diffusion Models are the cornerstone of Image Generation in modern Generative AI. From being used in applications like Video generation in Runway, to high quality open-source generation such as Stable Diffusion and FLUX. With the advent of GPT 4o's new autoregressive image gen, it's time to look at diffusion models and why they aren't going away anytime soon. This is a very surface level introduction to diffusion models, from data setup to training and testing. We will be training the model on the CelebA dataset, an image dataset with over 200k+ images. For part 1, we will just be covering the theory, so if you aren't a math person (you can still explore this), or want to jump straight to the code, you can skip to part 2 [here](https://sv-blog.vercel.app/posts/diffusion-models-p2/). The code will be available on my GitHub as well.
 
 ## Groundwork
 
@@ -335,7 +335,7 @@ Let's say we will have only $S$ sampling steps, instead of $T$, here $S$ is one 
 3. Calculate: $t = \frac{T \cdot (S - s)}{S}$
 4. Get the model prediction: $\epsilon_{\theta} = f_{\theta}(x_t, t)$
 5. Get the clean sample prediction $\hat{x}_0 = \frac{x_t - \sqrt{1 - \bar{\alpha}_t} \epsilon_{\theta}}{\sqrt{\bar{\alpha}_t}}$
-6. Get $x_t = \sqrt{\bar{\alpha}_t} \hat{x}_0 + \sqrt{1 - \bar{\alpha}_t}\ \epsilon_{\theta}$
+6. Get $x_{t-1} = \sqrt{\bar{\alpha}_{t-1}} x_0 + \sqrt{1 - \bar{\alpha}_{t-1}}\ \epsilon_{\theta}$
 7. Return $x_0$
 
 ## Conclusion
