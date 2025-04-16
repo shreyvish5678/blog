@@ -113,7 +113,7 @@ def forward_diffusion(x_0, t):
 
 Here is a sample output of using this function for noising an image:
 
-![forward_diffusion](@assets/diff_assets/forward_process.gif)
+<img src="@assets/diff_assets/forward_process.gif" alt="forward_diffusion" width="256" height="256" />
 
 ## Model Training
 
@@ -270,11 +270,11 @@ def sample_ddim(img_size, max_timesteps, sample_timesteps):
 
 Here is a generated image from the model:
 
-![sample](@assets/diff_assets/test_samples.png)
+<img src="@assets/diff_assets/sample.png" alt="sample_ddim" width="256" height="256" />
 
 Here is a GIF showing the denoising process in action:
 
-![sample_gif](@assets/diff_assets/diffusion_process.gif)
+<img src="@assets/diff_assets/sample.gif" alt="sample_ddim" width="256" height="256" />
 
 ## Conclusion
 
