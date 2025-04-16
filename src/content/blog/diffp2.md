@@ -1,6 +1,6 @@
 ---
 author: Shrey Vishen
-pubDatetime: 2025-04-15T00:58:04.000+00:00
+pubDatetime: 2025-04-15T11:23:15.000+00:00
 title: An Introduction to Diffusion Models Part 2
 slug: "diffusion-models-p2"
 featured: true
