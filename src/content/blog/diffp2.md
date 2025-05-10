@@ -265,7 +265,7 @@ def sample_ddim(img_size, max_timesteps, sample_timesteps):
         pred_noise = model(x_t, t)
         x_0_hat = (x_t - sqrt_1_minus_alpha_t * pred_noise) / sqrt_alpha_t
         x_t_next = sqrt_alpha_t_next * x_0_hat + sqrt_1_minus_alpha_t_next * pred_noise
-    return x_0_hat
+    return x_t_next
 ```
 
 Here is a generated image from the model:
